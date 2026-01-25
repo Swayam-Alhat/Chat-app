@@ -24,6 +24,10 @@ Read the first few paras from [The WebSocket API](https://developer.mozilla.org/
 
 Use [ws](https://www.npmjs.com/package/ws) to create websocket server in nodejs. To know more about `ws` classes & utility functions, look at [ws/docs/ws.md](https://github.com/websockets/ws/blob/HEAD/doc/ws.md)
 
+### Server security  
+Server (websocket server) should track client so to prevent repeated connection (handshake) with server. See [track clients](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers#keeping_track_of_clients)  
+
+
 ### How to create unique identifier for each websocket client connection in server, Since wss.clients returns a set which contains connected clients. But these connected client objects does not contain unique identifier property.
 
 Solution - [solution](https://github.com/websockets/ws/issues/859)
