@@ -4,11 +4,11 @@ In a nutshell, **WebSocket** is a technology that enables bidirectional, full-du
 
 #### The WebSocket technology includes two core building blocks:
 
-The **WebSocket protocol**. Enables communication between clients and servers over the web, and supports transmission of binary data and text strings. For more details, see the [WebSocket protocol](https://websocket.org/guides/websocket-protocol/).
+1. The **WebSocket protocol**. Enables communication between clients and servers over the web, and supports transmission of binary data and text strings. For more details, see the [WebSocket protocol](https://websocket.org/guides/websocket-protocol/).
 
 You will get `WebSocket implementation` at the end of article ([WebSocket protocol](https://websocket.org/guides/websocket-protocol/))
 
-The **WebSocket API**. Allows you to perform necessary actions, like managing the WebSocket connection, sending and receiving messages, and listening for events triggered by the server. For more details, see the [WebSocket API](https://websocket.org/reference/websocket-api/)
+2. The **WebSocket API**. Allows you to perform necessary actions, like managing the WebSocket connection, sending and receiving messages, and listening for events triggered by the server. For more details, see the [WebSocket API](https://websocket.org/reference/websocket-api/)
 
 ## What is the WebSocket API ?
 
