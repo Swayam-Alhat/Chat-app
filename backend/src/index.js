@@ -100,17 +100,6 @@ wss.on("connection", (ws, req) => {
     }
   });
 
-  // ws.on("message", (data) => {
-  //    first create a uuid for that websocket client
-
-  //    its in string json i.e {"key":"value"}. So convert it into js object
-  //   const formattedData = JSON.parse(data);
-  //   console.log("Data from client: ", formattedData);
-
-  //   always send data in string form i.e {"key":"value"}
-  //   ws.send(JSON.stringify(formattedData));
-  // });
-
   ws.on("close", () => {
     // send connected clients to all users
     wss.clients.forEach((client) => {
