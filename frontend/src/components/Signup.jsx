@@ -22,6 +22,7 @@ function Signup() {
       navigate("/");
     } catch (error) {
       console.log("error", error);
+
       if (error.response?.data?.error) {
         toast.error(error.response.data.error);
       } else {
