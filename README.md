@@ -24,9 +24,9 @@ Read the first few paras from [The WebSocket API](https://developer.mozilla.org/
 
 Use [ws](https://www.npmjs.com/package/ws) to create websocket server in nodejs. To know more about `ws` classes & utility functions, look at [ws/docs/ws.md](https://github.com/websockets/ws/blob/HEAD/doc/ws.md)
 
-### Server security  
-Server (websocket server) should track client so to prevent repeated connection (handshake) with server. See [track clients](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers#keeping_track_of_clients)  
+### Server security
 
+Server (websocket server) should track client so to prevent repeated connection (handshake) with server. See [track clients](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers#keeping_track_of_clients)
 
 ### How to create unique identifier for each websocket client connection in server, Since wss.clients returns a set which contains connected clients. But these connected client objects does not contain unique identifier property.
 
@@ -42,3 +42,8 @@ Supported Types: Strings, numbers, booleans, arrays, plain objects, and null are
 Omitted/Ignored Types: Properties with values of function, Symbol, or undefined are completely omitted from the resulting JSON string
 
 **So when we use JSON.parse() to convert it into normal object, it omits those types**
+
+**IMP Learning**  
+whenever we install any application or software in windows OS, we must specify the path of installed application (.exe file) in `environment variables`.  
+Go to system env varibles, we will get "path" or "PATH" variables. Variables are in Key-value pairs. So path/PATH will be key and its value will be string which will contains paths of multiple installed apps/software separated by ";" . Double click it, & you will see the list of paths. Click `new` and add the newly installed app's path. click Ok.  
+Now, we can run that app/software from any directory. Example, we installs nodejs, add its path in env vars. Now when we run `node -v` or `node file-name.js` , it runs because OS finds node with the help of Path/PATH variables.
